@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.itiaoling.starter.autoconfig.ItiaolingSpringBootAutoConfigureEntry,\
+com.itiaoling.starter.autoconfig.InternationalAutoConfiguration

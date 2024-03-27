@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.itiaoling</groupId>
+        <artifactId>super-pom</artifactId>
+        <version>1.2.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>itiaoling-starter</artifactId>
+    <packaging>pom</packaging>
+    <version>1.2.5-RELEASE</version>
+
+    <modules>
+        <module>itiaoling-dal</module>
+        <module>itiaoling-json</module>
+        <module>itiaoling-logs</module>
+        <module>itiaoling-spring</module>
+        <module>itiaoling-monitor</module>
+        <module>itiaoling-spring-boot-starter</module>
+        <module>itiaoling-template-archetype</module>
+    </modules>
+
+    <properties>
+        <!-- https://docs.micrometer.io/tracing/reference/ -->
+        <micrometer-tracing.version>1.2.0</micrometer-tracing.version>
+        <!-- https://docs.micrometer.io/micrometer/reference/ -->
+        <micrometer.version>1.12.0</micrometer.version>
+        <micrometer-pushgateway.version>0.16.0</micrometer-pushgateway.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.itiaoling</groupId>
+                <artifactId>itiaoling-logs</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itiaoling</groupId>
+                <artifactId>itiaoling-monitor</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itiaoling</groupId>
+                <artifactId>itiaoling-json</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itiaoling</groupId>
+                <artifactId>itiaoling-spring</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itiaoling</groupId>
+                <artifactId>itiaoling-dal</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-tracing-bom</artifactId>
+                <version>${micrometer-tracing.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.prometheus</groupId>
+                <artifactId>simpleclient_pushgateway</artifactId>
+                <version>${micrometer-pushgateway.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+
+    </build>
+</project>

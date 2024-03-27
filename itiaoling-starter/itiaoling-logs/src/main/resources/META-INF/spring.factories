@@ -1,0 +1,3 @@
+# auto configuration for itiaoling log
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.itiaoling.log.auto.ItiaolingLogAutoConfiguration
