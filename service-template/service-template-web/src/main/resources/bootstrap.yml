@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        sources:
+          - name: springboot-actuator
+            namespace: public
+          - name: springboot-admin
+            namespace: public
+          - name: application
+          - name: service-template

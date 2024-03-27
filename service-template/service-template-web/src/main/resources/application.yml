@@ -1,0 +1,26 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  max-http-request-header-size: 80KB
+
+spring:
+  application:
+    name: alarm-probe
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+itiaoling:
+  mq:
+    rabbit-mq:
+      enabled: true
+      exchange-name: alarm-probe-exchange
+      bindings:
+        - binding-queue-name: controller-metrics-queue
+          routing-key: controller-metrics-routing-key
+
+
+
+
+
