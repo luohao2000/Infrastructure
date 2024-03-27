@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-business/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-infrastructure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-infrastructure/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/service-template-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frameWork/service-template/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
