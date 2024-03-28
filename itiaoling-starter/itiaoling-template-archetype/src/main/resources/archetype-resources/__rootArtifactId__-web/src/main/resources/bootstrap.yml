@@ -1,7 +1,0 @@
-spring:
-  cloud:
-    kubernetes:
-      config:
-        sources:
-          - name: application
-          - name: ${spring.application.name}

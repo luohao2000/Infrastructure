@@ -1,3 +1,0 @@
-# auto configuration for itiaoling monitor
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.itiaoling.tracing.auto.ItiaolingTracingAutoConfiguration
